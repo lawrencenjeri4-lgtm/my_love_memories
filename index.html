@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Our Love Story</title>
+<meta name="theme-color" content="#fff0f6" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" />
+<link rel="stylesheet" href="style.css" />
+
+</head><body><div class="ambient-hearts" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="musicToggle" aria-label="Play or pause our song">
+    <span id="musicIcon">♫</span>
+    <span id="musicLabel">Our song</span>
+  </button>
+  <audio id="ourSong" loop preload="metadata">
+    <source src="assets/music/our-song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main>
+    <!-- WELCOME -->
+    <section class="screen welcome active" id="welcome">
+      <div class="welcome-card">
+        <div class="tiny-label">A LITTLE SURPRISE FOR YOU</div>
+        <div class="big-heart" aria-hidden="true">♡</div>
+        <p class="eyebrow">For my favorite person</p>
+        <h1>Hey, <span class="script">mah bae_stie</span> 🥹</h1>
+        <p class="intro">I made a little something for you.<br />Ready to take a trip through our memories?</p>
+        <button class="primary-btn" id="startBtn">Open your surprise <span>♡</span></button>
+        <p class="signature">made with love by your Gee for Life</p>
+      </div>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="screen section-screen" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">Chapter one</p>
+        <h2>Our little memories <span class="script">♡</span></h2>
+        <p>Every picture holds a little piece of my favorite story.</p>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+      <div class="section-actions">
+        <button class="primary-btn" id="letterBtn">There's something I want to tell you <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- VIDEOS (shown only when at least one video file exists) -->
+    <section class="screen section-screen" id="videos">
+      <div class="section-heading">
+        <p class="eyebrow">Chapter two</p>
+        <h2>Our moving memories <span class="script">♡</span></h2>
+        <p>Press play on a few of my favorite moments.</p>
+      </div>
+      <div class="memory-grid" id="videoGrid"></div>
+      <div class="section-actions">
+        <button class="primary-btn" id="videosLetterBtn">There's something I want to tell you <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="screen section-screen letter-screen" id="letter">
+      <div class="letter-wrap">
+        <div class="letter-top">♡ A letter from my heart ♡</div>
+        <div class="letter-paper">
+          <div class="letter-decoration">✿</div>
+          <p class="letter-greeting">To my mah bae_stie,</p>
+          <p>
+            I don't always know how to put everything I feel into words, but I hope
+            this little surprise reminds you how special you are to me.
+          </p>
+          <p>
+            Every laugh, every conversation, every little moment we share has become
+            something I treasure. You have a way of making ordinary days feel
+            beautiful, and even when we're doing absolutely nothing, being with you
+            means so much to me.
+          </p>
+          <p>
+            Thank you for being you, for the memories we've made, and for all the
+            little things that make our story ours. I can't promise every day will
+            be perfect, but I can promise to keep choosing you, caring for you, and
+            making more beautiful memories with you.
+          </p>
+          <p>
+            So here's a tiny reminder from your Gee for Life: you are loved,
+            appreciated, and very, very special to me. ❤️
+          </p>
+          <p class="letter-signoff">Always your Gee for Life,<br /><span class="script">♡</span></p>
+        </div>
+        <button class="primary-btn" id="proposalBtn">One last question… <span>♡</span></button>
+      </div>
+    </section>
+
+    <!-- PROPOSAL -->
+    <section class="screen proposal-screen" id="proposal">
+      <div class="proposal-card">
+        <div class="proposal-kicker">Wait… before you go 🥺</div>
+        <div class="proposal-heart" aria-hidden="true">💗</div>
+        <p class="eyebrow">After all our memories…</p>
+        <h2>Will you continue<br />being my girlfriend?</h2>
+        <p class="proposal-copy">More laughs, more memories, more us.<br />What do you say, mah bae_stie?</p>
+
+        <div class="button-playground" id="buttonPlayground">
+          <button class="yes-btn" id="yesBtn">YES! 😍</button>
+          <button class="no-btn" id="noBtn">No 🙈</button>
+        </div>
+        <p class="no-message" id="noMessage" aria-live="polite">Choose wisely, bae 😂💕</p>
+        <p class="proposal-signature">— your Gee for Life</p>
+      </div>
+    </section>
+
+    <!-- CELEBRATION -->
+    <section class="screen celebration-screen" id="celebration">
+      <div class="celebration-card">
+        <div class="celebration-emoji">🥹💖🎉</div>
+        <p class="eyebrow">the happiest Gee for Life</p>
+        <h2>YAYYY, <span class="script">mah bae_stie!</span></h2>
+        <p class="celebration-copy">You just made me the happiest person ever. Here's to more love, more laughter, and a lifetime of little memories together. ❤️</p>
+        <div class="celebration-big-heart">♡</div>
+        <p class="forever">I love you, my girl.</p>
+        <button class="secondary-btn" id="replayBtn">Replay our little story ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>made with ♡, just for mah bae_stie</footer>
+  <script src="script.js"></script>
+</body></html>
